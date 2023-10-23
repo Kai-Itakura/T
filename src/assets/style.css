@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+button {
+  border: none;
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 0.5;
+  transition: all 0.2s;
+}
+
+.calculator {
+  background-color: black;
+  width: fit-content;
+  text-align: center;
+  margin: 50px auto;
+  padding: 15px;
+  border-radius: 45px;
+}
+
+.results {
+  width: 100%;
+  color: white;
+  text-align: right;
+  font-size: 60px;
+  padding: 70px 20px 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  width: fit-content;
+}
+
+.top-buttons {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: fit-content;
+  gap: 10px;
+  padding: 0 10px 10px 10px;
+}
+
+.top-buttons button {
+  background-color: darkgray;
+}
+
+.under-buttons {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: fit-content;
+  gap: 10px;
+  padding: 0 10px 10px 10px;
+}
+
+.under-buttons button {
+  background-color: rgb(108, 109, 108);
+  color: white;
+}
+
+.zero {
+  grid-column: 1 / 3;
+  width: 100%;
+  border-radius: 9999px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.side-buttons {
+  grid-row: 1/3;
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: fit-content;
+  gap: 10px;
+  padding: 0 10px 10px 0;
+}
+
+.side-buttons button {
+  background-color: orange;
+  color: white;
+}
+
+.selected {
+  background-color: white !important;
+  color: orange !important;
+  transition: all 0.2s;
+}
